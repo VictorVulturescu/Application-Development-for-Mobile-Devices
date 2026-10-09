@@ -1,4 +1,4 @@
-# Application Development for mobile devices 2026
+# Application Development for Mobile Devices 2026
 
 This is a repository containing all the labs from the `Application development for Mobile Devices` cours from FILS UPB, 3rd year
 
