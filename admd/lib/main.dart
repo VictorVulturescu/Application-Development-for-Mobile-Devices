@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/todo_screen.dart';
+
 import 'models/user.dart';
 import 'models/bank_account.dart';
 import 'models/library.dart';
@@ -99,15 +101,16 @@ class _LabPageState extends State<LabPage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('ADMD - Lab 2: Dart Type Safety'),
+          title: const Text('ADMD'),
           bottom: const TabBar(
             tabs: [
               Tab(text: 'Users'),
               Tab(text: 'Accounts'),
               Tab(text: 'Library'),
+              Tab(text: 'Todo'),
             ],
           ),
         ),
@@ -208,6 +211,7 @@ class _LabPageState extends State<LabPage> {
                 ),
               ],
             ),
+            const TodoScreen(),
           ],
         ),
       ),
